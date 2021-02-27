@@ -1,0 +1,1 @@
+{"version":3,"file":"Storage.js","sourceRoot":"","sources":["../src/Storage.ts"],"names":[],"mappings":";;;AAAA,qCAA8B;AAG9B,MAAa,OAAO;IAElB,YAAY,GAAY,EAAE,GAAa,EAAE,cAA8B;QACrE,IAAI,CAAC,OAAO,GAAG,IAAI,iBAAO,CAAC,GAAG,EAAE,GAAG,EAAE,cAAc,CAAC,CAAC;IACvD,CAAC;CAGF;AAPD,0BAOC"}

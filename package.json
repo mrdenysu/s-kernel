@@ -1,0 +1,31 @@
+{
+  "name": "s-kernel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/Server.js",
+  "types": "lib/Server.d.ts",
+  "typings": "lib/Server.d.ts",
+  "scripts": {
+    "dev": "tsc -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cookies": "^0.8.0",
+    "ejs": "^3.1.6",
+    "formidable": "^1.2.2",
+    "html-minifier": "^4.0.0",
+    "mime-types": "^2.1.29",
+    "path-to-regexp": "^6.2.0",
+    "@types/cookies": "^0.7.6",
+    "@types/ejs": "^3.0.6",
+    "@types/formidable": "^1.0.32",
+    "@types/html-minifier": "^4.0.0",
+    "@types/mime-types": "^2.1.0",
+    "@types/path-to-regexp": "^1.7.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.2.2"
+  }
+}
