@@ -33,11 +33,11 @@ export class Server {
 
     // Default
     this.router = new Router();
-    this.errorHandler404 = async ({write: {error}}) => {
-      return error(404, "Not Found[");
+    this.errorHandler404 = async ({write}) => {
+      return write.error(404, "Not Found[");
     };
-    this.errorHandler500 = async ({write: {error}}) => {
-      return error(500, "Internal Server Error");
+    this.errorHandler500 = async ({write}) => {
+      return write.error(500, "Internal Server Error");
     };
     log("Create at:", new Date().toLocaleString("ru"));
   }
@@ -80,7 +80,7 @@ export class Server {
     const [routeFound, { params, func: routeHandler }] = this.findRoute(<Method>method, pathname);
 
     let func: RouteHandler;
-    if (!routeFound) func = routeHandler;
+    if (routeFound) func = routeHandler;
     else func = this.errorHandler404;
 
     const state = new State(req, { method, pathname, query, params }); // readonly
