@@ -1,4 +1,4 @@
-import Cookies from "cookies";
+import * as Cookies from "cookies";
 import { Request, Response } from "./Server";
 export declare class Storage {
     cookies: Cookies;
