@@ -33,11 +33,11 @@ export class Server {
 
     // Default
     this.router = new Router();
-    this.errorHandler404 = async () => {
-      return "";
+    this.errorHandler404 = async ({write: {error}}) => {
+      return error(404, "Not Found[");
     };
-    this.errorHandler500 = async () => {
-      return "";
+    this.errorHandler500 = async ({write: {error}}) => {
+      return error(500, "Internal Server Error");
     };
     log("Create at:", new Date().toLocaleString("ru"));
   }
